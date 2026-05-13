@@ -1,4 +1,25 @@
 # dart-simulation
-See https://www.overleaf.com/read/pxsnznvndnbp#a53d8f for a full write-up.
 
-In short, this project answers the question of where is the best place to throw on a dartboard, assuming there is variation in one's aim. It answers this question through Monte Carlo simulations which calculate the average score when many darts are thrown at a given center point, and brute forces its way to calculate the best (i.e. highest average).
+Monte Carlo simulation of where to aim on a dartboard given variation in your aim.
+
+## Overview
+
+Given a model of aim variance, this project answers: what's the highest-expected-value point to aim for on a standard dartboard? It computes the expected score at a candidate aim point by throwing many simulated darts around it, then sweeps the board to find the maximum. See the [Overleaf write-up](https://www.overleaf.com/read/pxsnznvndnbp#a53d8f) for the full derivation and results.
+
+## Stack
+
+- Python (single-file: `main.py`)
+
+## Getting started
+
+```bash
+python main.py
+```
+
+## Links
+
+- [Full write-up (Overleaf)](https://www.overleaf.com/read/pxsnznvndnbp#a53d8f)
+
+## Status
+
+Finished writeup.
